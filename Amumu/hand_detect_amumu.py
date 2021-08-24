@@ -48,9 +48,9 @@ for motion in motions:
             grabbed, frame = frames.read()
             if not grabbed: break
             if i % 3 == 0:
-                original_name = media_name + f"_{i}" + ".jpg"
-                mask_name = media_name + "_masked"+ f"_{i}" + ".jpg"
-                coordinate_name = media_name + f"_{i}" + ".txt"
+                original_name = motion + media_name + f"_{i}" + ".jpg"
+                mask_name = motion + media_name + "_masked"+ f"_{i}" + ".jpg"
+                coordinate_name = motion + media_name + f"_{i}" + ".txt"
                 
                 img_height, img_width, _ = frame.shape
 
